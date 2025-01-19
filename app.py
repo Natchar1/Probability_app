@@ -43,7 +43,7 @@ def plot_graph(labels, theoretical_values, experimental_values, title):
 
 if page == "หน้าแรก":
     st.title("โปรแกรมจำลองความน่าจะเป็น")
-    st.image("images/Natchar.jpg", caption="", width=400)
+    st.image("images/Natchar.JPG", caption="", width=400)
     st.header("ผู้พัฒนา:")
     st.write("นาย นัชท์ชา ผ่องศรี" ) 
     st.write("กลุ่มสาระคณิตศาสตร์ ระดับ มัธยมศึกษาตอนปลาย")

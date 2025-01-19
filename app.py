@@ -73,14 +73,7 @@ if page == "หน้าแรก":
 # หน้า 1: เกมโยนเหรียญ
 elif page == "เกมโยนเหรียญ":
     st.title("เกมโยนเหรียญ")
-    st.markdown(
-    """
-    <div style="text-align: center;">
-        <img src="images/coin.png" alt="ตัวอย่างสื่อการเรียนรู้" style="width: 300px; border-radius: 10px;">
-        <p style="font-size: 16px; color: gray;">ตัวอย่างสื่อการเรียนรู้</p>
-    </div>
-    """,
-    unsafe_allow_html=True)
+    st.image("images/your_image.png", caption="ตัวอย่างสื่อการเรียนรู้", width=300)
 
     num_tosses = st.slider("เลือกจำนวนครั้งที่ต้องการโยนเหรียญ", min_value=10, max_value=1000, step=10, value=100)
     

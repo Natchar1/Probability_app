@@ -139,6 +139,16 @@ elif page == "เกมทอยลูกเต๋า":
                list(experimental_probability.values()),
                "เปรียบเทียบความน่าจะเป็นในเกมทอยลูกเต๋า")
 
+    st.title("ใบกิจกรรมที่ 2" )
+    st.write("การทอยลูกเต๋าและการกระจายความน่าจะเป็น")
+    st.image("images/A2.png", caption="", width=400)
+    with open("activity/activity 2.pdf", "rb") as file:
+        btn = st.download_button(
+            label="ดาวน์โหลดใบงานทอยลูกเต๋า",
+            data=file,
+            file_name="activity 2.pdf",  # ชื่อไฟล์ที่ดาวน์โหลด
+            mime="application/pdf"     )
+
 # หน้า 3: เกมสุ่มตัวเลข
 elif page == "เกมสุ่มตัวเลข":
     st.title("เกมสุ่มตัวเลข")
@@ -170,6 +180,18 @@ elif page == "เกมสุ่มตัวเลข":
                    list(theoretical_probability.values()), 
                    list(experimental_probability.values()),
                    "เปรียบเทียบความน่าจะเป็นในเกมสุ่มตัวเลข")
+
+
+        st.title("ใบกิจกรรมที่ 3" )
+        st.write("ความน่าจะเป็นและช่วงตัวเลข")
+        st.image("images/A3.png", caption="", width=400)
+        with open("activity/activity 3.pdf", "rb") as file:
+            btn = st.download_button(
+                label="ดาวน์โหลดใบงานความน่าจะเป็นและช่วงตัวเลข",
+                data=file,
+                file_name="activity 3.pdf",  # ชื่อไฟล์ที่ดาวน์โหลด
+                mime="application/pdf"     )
+
 # หน้า 4: เกมหยิบลูกบอล
 elif page == "เกมหยิบลูกบอล":
     # ฟังก์ชันคำนวณการจัดหมู่
@@ -264,3 +286,13 @@ elif page == "เกมหยิบลูกบอล":
         st.write("### ผลลัพธ์จากทฤษฎี:")
         for case, prob in theoretical_probs.items():
             st.write(f"P({case}) = {prob:.2f}%")
+
+        st.title("ใบกิจกรรมที่ 4" )
+        st.write("การจัดหมู่กับการหยิบลูกบอล")
+        st.image("images/A4.png", caption="", width=400)
+        with open("activity/activity 4.pdf", "rb") as file:
+            btn = st.download_button(
+                label="ดาวน์โหลดใบงานการจัดหมู่กับการหยิบลูกบอล",
+                data=file,
+                file_name="activity 4.pdf",  # ชื่อไฟล์ที่ดาวน์โหลด
+                mime="application/pdf"     )

@@ -104,7 +104,7 @@ elif page == "เกมโยนเหรียญ":
     
     st.title("ใบกิจกรรมที่ 1" )
     st.write("ผลลัพธ์การทดลองวิเคราะห์ผลการโยนเหรียญ")
-    st.image("images/A1.png", caption="", width=400)
+    st.image("images/A1.png", caption="", width=600)
     with open("activity/activity 1.pdf", "rb") as file:
         btn = st.download_button(
             label="ดาวน์โหลดใบงานเกมโยนเหรียญ",
@@ -141,7 +141,7 @@ elif page == "เกมทอยลูกเต๋า":
 
     st.title("ใบกิจกรรมที่ 2" )
     st.write("การทอยลูกเต๋าและการกระจายความน่าจะเป็น")
-    st.image("images/A2.png", caption="", width=400)
+    st.image("images/A2.png", caption="", width=600)
     with open("activity/activity 2.pdf", "rb") as file:
         btn = st.download_button(
             label="ดาวน์โหลดใบงานทอยลูกเต๋า",
@@ -184,7 +184,7 @@ elif page == "เกมสุ่มตัวเลข":
 
         st.title("ใบกิจกรรมที่ 3" )
         st.write("ความน่าจะเป็นและช่วงตัวเลข")
-        st.image("images/A3.png", caption="", width=400)
+        st.image("images/A3.png", caption="", width=600)
         with open("activity/activity 3.pdf", "rb") as file:
             btn = st.download_button(
                 label="ดาวน์โหลดใบงานความน่าจะเป็นและช่วงตัวเลข",
@@ -233,7 +233,7 @@ elif page == "เกมหยิบลูกบอล":
         return experimental_probs
 
     st.title("เกมหยิบลูกบอล (การจัดหมู่)")
-    st.image("images/ball.png", caption="", width=300)
+    st.image("images/ball.png", caption="", width=600)
     st.write("สถานการณ์: มีกล่อง 1 ใบที่มีลูกบอล 2 สี (แดงและน้ำเงิน)")
 
     # Input parameters

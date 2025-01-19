@@ -10,7 +10,7 @@ from itertools import combinations
 from collections import Counter
 
 # ตั้งค่าฟอนต์ภาษาไทย
-font_path = "fonts/THSarabunNew.ttf"  # ชี้ไปที่ไฟล์ฟอนต์ในโฟลเดอร์
+font_path = "fonts/THSarabunNew.ttf"  # ระบุเส้นทางฟอนต์
 thai_font = fm.FontProperties(fname=font_path)
 rcParams['font.family'] = thai_font.get_name()
 
@@ -227,12 +227,12 @@ elif page == "เกมหยิบลูกบอล":
         # กราฟแท่งสำหรับการทดลอง
         ax.bar([i + bar_width for i in x], experimental_values, bar_width, label="การทดลอง", alpha=0.7, color='orange')
 
-        ax.set_xlabel("กรณี", fontsize=14, fontproperties=thai_font)
-        ax.set_ylabel("ความน่าจะเป็น (%)", fontsize=14, fontproperties=thai_font)
-        ax.set_title("เปรียบเทียบความน่าจะเป็น", fontsize=16, fontproperties=thai_font)
+        ax.set_xlabel("กรณี", fontsize=14, prop=thai_font)
+        ax.set_ylabel("ความน่าจะเป็น (%)", fontsize=14, prop=thai_font)
+        ax.set_title("เปรียบเทียบความน่าจะเป็น", fontsize=16, prop=thai_font)
         ax.set_xticks([i + bar_width / 2 for i in x])
-        ax.set_xticklabels(labels, rotation=45, fontsize=10, fontproperties=thai_font)
-        ax.legend(fontsize=12, loc='upper left', fontproperties=thai_font)
+        ax.set_xticklabels(labels, rotation=45, fontsize=10, prop=thai_font)
+        ax.legend(fontsize=12, loc='upper left', prop=thai_font)
         st.pyplot(fig)
 
         # แสดงผล

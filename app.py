@@ -105,7 +105,12 @@ elif page == "เกมโยนเหรียญ":
     st.title("ใบกิจกรรมที่ 1" )
     st.write("ผลลัพธ์การทดลองวิเคราะห์ผลการโยนเหรียญ")
     st.image("images/A1.png", caption="", width=400)
-
+    with open("activity/A1.pdf", "rb") as file:
+        btn = st.download_button(
+            label="ดาวน์โหลดใบงานเกมโยนเหรียญ",
+            data=file,
+            file_name="A1.pdf",  # ชื่อไฟล์ที่ดาวน์โหลด
+            mime="application/pdf"     )
 
 # หน้า 2: เกมทอยลูกเต๋า
 elif page == "เกมทอยลูกเต๋า":

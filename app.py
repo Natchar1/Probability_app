@@ -101,6 +101,11 @@ elif page == "เกมโยนเหรียญ":
                [theoretical_probability["Head"], theoretical_probability["Tail"]], 
                [experimental_probability["Head"], experimental_probability["Tail"]],
                "เปรียบเทียบความน่าจะเป็นในเกมโยนเหรียญ")
+    
+    st.title("ใบกิจกรรมที่ 1" )
+    st.write("ผลลัพธ์การทดลองวิเคราะห์ผลการโยนเหรียญ")
+    st.image("images/A1.png", caption="", width=400)
+
 
 # หน้า 2: เกมทอยลูกเต๋า
 elif page == "เกมทอยลูกเต๋า":

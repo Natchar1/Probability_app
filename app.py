@@ -40,10 +40,10 @@ def plot_graph(labels, theoretical_values, experimental_values, title):
 if page == "หน้าแรก":
     st.title("โปรแกรมจำลองความน่าจะเป็น")
     st.header("ผู้พัฒนา:")
-    st.write("นาย นัชท์ชา ผ่องศรี")
+    st.write("นาย นัชท์ชา ผ่องศรี กลุ่มสาระคณิตศาสตร์ ระดับ มัธยมศึกษาตอนปลาย")
 
     st.header("สื่อนี้เป็นส่วนหนึ่งของวิชา")
-    st.write("คณิตศาสตร์พื้นฐาน 5 (ค33101)")
+    st.write("คณิตศาสตร์พื้นฐาน 5 (ค33101) นักเรียนระดับชั้น ม.6")
 
     st.header("วัตถุประสงค์ของสื่อ:")
     st.write("""
@@ -73,6 +73,7 @@ if page == "หน้าแรก":
 # หน้า 1: เกมโยนเหรียญ
 elif page == "เกมโยนเหรียญ":
     st.title("เกมโยนเหรียญ")
+    st.image("https://github.com/Natchar1/Probability_app/blob/main/images/coin.png", caption="", use_column_width=True)
     num_tosses = st.slider("เลือกจำนวนครั้งที่ต้องการโยนเหรียญ", min_value=10, max_value=1000, step=10, value=100)
     
     # การทดลอง

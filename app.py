@@ -20,7 +20,7 @@ except FileNotFoundError:
 
 # Sidebar สำหรับเลือกหน้าเกม
 st.sidebar.title("เลือกเกม")
-page = st.sidebar.radio("ไปยัง:", ["หน้าแรก","เกมโยนเหรียญ", "เกมทอยลูกเต๋า", "เกมสุ่มตัวเลข", "เกมหยิบลูกบอล"])
+page = st.sidebar.radio("ไปยัง:", ["หน้าแรก","เกมโยนเหรียญ", "เกมทอยลูกเต๋า", "เกมสุ่มตัวเลข", "เกมหยิบลูกบอล","แบบประเมินสื่อ"])
 
 # ฟังก์ชันสำหรับกราฟ
 def plot_graph(labels, theoretical_values, experimental_values, title):
@@ -296,3 +296,12 @@ elif page == "เกมหยิบลูกบอล":
                 data=file,
                 file_name="activity 4.pdf",  # ชื่อไฟล์ที่ดาวน์โหลด
                 mime="application/pdf"     )
+elif page == "แบบประเมินสื่อ":
+    st.title("ลิงก์ประเมินสื่อ")
+    st.markdown(
+    """
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWSudzZe81WhGRZ4GKifL8OmZo6de6lY5Y4lD1adBvg9k9NQ/viewform?usp=sharing" target="_blank">
+        <button style="padding:10px; font-size:16px;">ประเมินสื่อ</button>
+    </a>
+    """,
+    unsafe_allow_html=True)

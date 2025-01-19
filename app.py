@@ -73,7 +73,7 @@ if page == "หน้าแรก":
 # หน้า 1: เกมโยนเหรียญ
 elif page == "เกมโยนเหรียญ":
     st.title("เกมโยนเหรียญ")
-    st.image("images/coin.png", caption="ตัวอย่างสื่อการเรียนรู้", width=300)
+    st.image("images/coin.png", caption="", width=300)
 
     num_tosses = st.slider("เลือกจำนวนครั้งที่ต้องการโยนเหรียญ", min_value=10, max_value=1000, step=10, value=100)
     
@@ -99,6 +99,7 @@ elif page == "เกมโยนเหรียญ":
 # หน้า 2: เกมทอยลูกเต๋า
 elif page == "เกมทอยลูกเต๋า":
     st.title("เกมทอยลูกเต๋า")
+    st.image("images/di.png", caption="", width=300)
     num_rolls = st.slider("เลือกจำนวนครั้งที่ต้องการทอยลูกเต๋า", min_value=10, max_value=1000, step=10, value=100)
     
     # การทดลอง

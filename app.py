@@ -43,6 +43,7 @@ def plot_graph(labels, theoretical_values, experimental_values, title):
 
 if page == "หน้าแรก":
     st.title("โปรแกรมจำลองความน่าจะเป็น")
+    st.image("images/Natchar.png", caption="", width=400)
     st.header("ผู้พัฒนา:")
     st.write("นาย นัชท์ชา ผ่องศรี" ) 
     st.write("กลุ่มสาระคณิตศาสตร์ ระดับ มัธยมศึกษาตอนปลาย")
@@ -131,6 +132,7 @@ elif page == "เกมทอยลูกเต๋า":
 # หน้า 3: เกมสุ่มตัวเลข
 elif page == "เกมสุ่มตัวเลข":
     st.title("เกมสุ่มตัวเลข")
+    st.image("images/number.png", caption="", width=300)
     num_rolls = st.slider("เลือกจำนวนครั้งที่ต้องการสุ่มตัวเลข", min_value=10, max_value=1000, step=10, value=100)
     lower_bound = st.number_input("ช่วงตัวเลขต่ำสุด", value=1)
     upper_bound = st.number_input("ช่วงตัวเลขสูงสุด", value=10)
@@ -199,6 +201,7 @@ elif page == "เกมหยิบลูกบอล":
         return experimental_probs
 
     st.title("เกมหยิบลูกบอล (การจัดหมู่)")
+    st.image("images/ball.png", caption="", width=300)
     st.write("สถานการณ์: มีกล่อง 1 ใบที่มีลูกบอล 2 สี (แดงและน้ำเงิน)")
 
     # Input parameters

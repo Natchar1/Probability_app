@@ -10,7 +10,7 @@ from itertools import combinations
 from collections import Counter
 
 # ตั้งค่าฟอนต์ภาษาไทย
-font_path = "C:/Windows/Fonts/ANGSANA.TTC"  # ระบุที่อยู่ของฟอนต์ภาษาไทย
+font_path = "fonts/THSarabunNew.ttf"  # ชี้ไปที่ไฟล์ฟอนต์ในโฟลเดอร์
 thai_font = fm.FontProperties(fname=font_path)
 rcParams['font.family'] = thai_font.get_name()
 

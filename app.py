@@ -11,8 +11,12 @@ from collections import Counter
 
 # ตั้งค่าฟอนต์ภาษาไทย
 font_path = "fonts/THSarabunNew.ttf"  # ระบุเส้นทางฟอนต์
-thai_font = fm.FontProperties(fname=font_path)
-rcParams['font.family'] = thai_font.get_name()
+try:
+    thai_font = fm.FontProperties(fname=font_path)
+    rcParams['font.family'] = thai_font.get_name()
+except FileNotFoundError:
+    # ใช้ฟอนต์สำรองหากไม่มีฟอนต์ภาษาไทย
+    rcParams['font.family'] = 'DejaVu Sans'
 
 # Sidebar สำหรับเลือกหน้าเกม
 st.sidebar.title("เลือกเกม")

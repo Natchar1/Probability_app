@@ -233,7 +233,7 @@ elif page == "เกมหยิบลูกบอล":
         return experimental_probs
 
     st.title("เกมหยิบลูกบอล (การจัดหมู่)")
-    st.image("images/ball.png", caption="", width=600)
+    st.image("images/ball.png", caption="", width=300)
     st.write("สถานการณ์: มีกล่อง 1 ใบที่มีลูกบอล 2 สี (แดงและน้ำเงิน)")
 
     # Input parameters
@@ -289,7 +289,7 @@ elif page == "เกมหยิบลูกบอล":
 
         st.title("ใบกิจกรรมที่ 4" )
         st.write("การจัดหมู่กับการหยิบลูกบอล")
-        st.image("images/A4.png", caption="", width=400)
+        st.image("images/A4.png", caption="", width=600)
         with open("activity/activity 4.pdf", "rb") as file:
             btn = st.download_button(
                 label="ดาวน์โหลดใบงานการจัดหมู่กับการหยิบลูกบอล",

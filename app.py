@@ -227,12 +227,12 @@ elif page == "เกมหยิบลูกบอล":
         # กราฟแท่งสำหรับการทดลอง
         ax.bar([i + bar_width for i in x], experimental_values, bar_width, label="การทดลอง", alpha=0.7, color='orange')
 
-        ax.set_xlabel("กรณี", fontsize=14)
-        ax.set_ylabel("ความน่าจะเป็น (%)", fontsize=14)
-        ax.set_title("เปรียบเทียบความน่าจะเป็น", fontsize=16)
+        ax.set_xlabel("กรณี", fontsize=14, fontproperties=thai_font)
+        ax.set_ylabel("ความน่าจะเป็น (%)", fontsize=14, fontproperties=thai_font)
+        ax.set_title("เปรียบเทียบความน่าจะเป็น", fontsize=16, fontproperties=thai_font)
         ax.set_xticks([i + bar_width / 2 for i in x])
-        ax.set_xticklabels(labels, rotation=45, fontsize=10)
-        ax.legend(fontsize=12, loc='upper left')
+        ax.set_xticklabels(labels, rotation=45, fontsize=10, fontproperties=thai_font)
+        ax.legend(fontsize=12, loc='upper left', fontproperties=thai_font)
         st.pyplot(fig)
 
         # แสดงผล

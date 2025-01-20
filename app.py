@@ -43,28 +43,22 @@ def plot_graph(labels, theoretical_values, experimental_values, title):
 
 if page == "หน้าแรก":
     st.title("โปรแกรมจำลองความน่าจะเป็น")
-    st.write("กลุ่มสาระคณิตศาสตร์ ระดับ มัธยมศึกษาตอนปลาย")
     st.header("ผู้พัฒนา:")
-    st.markdown(
-    """
-    <div style="display: flex; justify-content: space-around; align-items: center;">
-        <div style="text-align: center;">
-            <img src="images/Natchar.JPG" style="width: 150px; border-radius: 10px;">
-            <p>1. นายนัชท์ชา ผ่องศรี</p>
-        </div>
-        <div style="text-align: center;">
-            <img src="images/Wuttisit.JPG" style="width: 150px; border-radius: 10px;">
-            <p>2. นายวุฒิสิทธ์ สมตุ้ย</p>
-        </div>
-        <div style="text-align: center;">
-            <img src="images/Nutchanar.JPG" style="width: 150px; border-radius: 10px;">
-            <p>3. นางนุชนาถ กระต่ายทอง</p>
-        </div>
-    </div>
-    """,
-    unsafe_allow_html=True)
+    col1, col2, col3 = st.columns([1, 1, 1])  # ปรับขนาดคอลัมน์ให้เท่ากัน
 
-    
+    with col1:
+        st.image("images/Natchar.JPG", caption="", width=150)
+        st.write("1. นายนัชท์ชา ผ่องศรี")
+
+    with col2:
+        st.image("images/Wuttisit.JPG", caption="", width=150)
+        st.write("2. นายวุฒิสิทธ์ สมตุ้ย")
+
+    with col3:
+        st.image("images/Nutchanar.JPG", caption="", width=150)
+        st.write("3. นางนุชนาถ กระต่ายทอง")
+
+    st.write("กลุ่มสาระคณิตศาสตร์ ระดับ มัธยมศึกษาตอนปลาย")
 
     st.header("สื่อนี้เป็นส่วนหนึ่งของวิชา")
     st.write("คณิตศาสตร์พื้นฐาน 5 (ค33101) นักเรียนระดับชั้น ม.6")

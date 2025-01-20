@@ -43,10 +43,28 @@ def plot_graph(labels, theoretical_values, experimental_values, title):
 
 if page == "หน้าแรก":
     st.title("โปรแกรมจำลองความน่าจะเป็น")
-    st.image("images/Natchar.JPG", caption="", width=400)
-    st.header("ผู้พัฒนา:")
-    st.write("นาย นัชท์ชา ผ่องศรี" ) 
     st.write("กลุ่มสาระคณิตศาสตร์ ระดับ มัธยมศึกษาตอนปลาย")
+    st.header("ผู้พัฒนา:")
+    st.markdown(
+    """
+    <div style="display: flex; justify-content: space-around; align-items: center;">
+        <div style="text-align: center;">
+            <img src="images/Natchar.JPG" style="width: 150px; border-radius: 10px;">
+            <p>1. นายนัชท์ชา ผ่องศรี</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="images/Wuttisit.JPG" style="width: 150px; border-radius: 10px;">
+            <p>2. นายวุฒิสิทธ์ สมตุ้ย</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="images/Nutchanar.JPG" style="width: 150px; border-radius: 10px;">
+            <p>3. นางนุชนาถ กระต่ายทอง</p>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True)
+
+    
 
     st.header("สื่อนี้เป็นส่วนหนึ่งของวิชา")
     st.write("คณิตศาสตร์พื้นฐาน 5 (ค33101) นักเรียนระดับชั้น ม.6")
